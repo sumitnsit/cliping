@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+	body{
+		background-color: #999;
+	}
+		.outer{
+			position: relative;
+			width: 300px;
+			height: 100px;
+			background-color: yellow;
+			border: 8px solid #F5F5F5;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+
+		.user{
+			position: absolute;
+			background-color: #E0E0E0;
+			height: 100%;
+			width: 170px;
+			right: 0px;
+			box-shadow: inset 0px 0px 3px #797979;
+			box-shadow: inset 0px 0px 3px #797979;
+			background-image: url("girl.jpg");
+			background-size: 100% 100%;			
+		}
+
+		.mask{
+			position: absolute;
+			background-color: transparent;
+			height: 86px;
+			width: 86px;
+			z-index: 20;
+			left: 138px;
+			-webkit-transform: rotate(45deg);
+			top: 7px;
+			border: 8px solid #F5F5F5;
+			box-sizing: border-box;
+			border-radius: 6px;
+			-webkit-clip-path: polygon(0px 0px, 0px 86px, 86px 86px);
+			box-shadow: 0px 1px 1px #797979, inset 0px 0px 2px #797979;
+		}
+
+		.logo{
+			z-index: 10;
+			position: absolute;
+			background-color: #F4F4F4;
+			height: 100%;
+			width: 180px;
+			-webkit-clip-path: polygon(0px 0px, 180px 0px, 130px 50px, 180px 100px, 0px 100px);
+			box-shadow: inset 0px 0px 3px #797979;
+			background-image: url("missing.jpg");
+			background-size: 100% 100%;
+		}
+
+
+
+
+	</style>
+</head>
+
+<body>
+
+	<div class="outer">
+		<span class="logo"></span>
+		<span class="mask"></span>
+		<span class="user"></span>
+		
+	</div>
+
+
+</body>
+</html>
